@@ -25,11 +25,11 @@ spec:
 
     spec: 
       containers:
-      - name: nginx
+      - name: mogodb-container
         image: vvkr/mongodb:v1
         imagePullpolicy: Always
 
-apiversion: v1
+apiVersion: v1
 kind: Service
 metadata:
   name: mongodb
