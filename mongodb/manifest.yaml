@@ -22,7 +22,6 @@ spec:
         app: mongodb
         project: roboshop
         tier: db
-
     spec: 
       containers:
       - name: mongodb-container
@@ -43,5 +42,5 @@ spec:
     tier: db
   ports:
   - protocol: TCP
-    port: 27017 # Service port
+    port: 27017      # Service port
     targetPort: 27017 # Container port
