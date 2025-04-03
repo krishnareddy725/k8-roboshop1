@@ -25,7 +25,7 @@ spec:
     spec: 
       containers:
       - name: mongodb-container
-        image: vvkr/mongodb:v1
+        image: joindevops/mongodb:v1
         imagePullPolicy: Always
 ---
 apiVersion: v1
