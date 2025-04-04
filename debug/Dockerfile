@@ -1,2 +1,2 @@
 FROM almalinux:8
-RUN yum install telnet -yum
+RUN yum install telnet -y
