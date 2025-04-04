@@ -142,7 +142,7 @@ spec:
       - name: web
         image: joindevops/web:v1
         imagePullPolicy: Always
-        volumemounts:
+        volumeMounts:
         - name: nginx.conf
           mountPath: /etc/nginx/nginx.conf
           subPath: nginx.conf
