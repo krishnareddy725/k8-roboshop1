@@ -140,7 +140,7 @@ metadata:
   name: web
   namespace: roboshop
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: web
     project: roboshop
