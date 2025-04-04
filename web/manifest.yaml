@@ -143,7 +143,7 @@ spec:
         image: joindevops/web:v1
         imagePullPolicy: Always
         volumeMounts:
-        - name: nginx.conf
+        - name: nginx-conf
           mountPath: /etc/nginx/nginx.conf
           subPath: nginx.conf
           readOnly: true
@@ -171,4 +171,3 @@ spec:
   - protocol: TCP
     port: 80 #serviceport
     targetPort: 80 #containerPort
-
