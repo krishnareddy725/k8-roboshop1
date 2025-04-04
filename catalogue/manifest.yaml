@@ -50,9 +50,9 @@ metadata:
 spec:
   selector:
     labels:
-    app: catalogue
-    project: roboshop
-    tier: app
+      app: catalogue
+      project: roboshop
+      tier: app
   ports:
   - protocol: TCP
     port: 8080
