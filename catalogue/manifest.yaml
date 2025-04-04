@@ -5,7 +5,7 @@ metadata:
   namespace: roboshop
 
 data:
-  MONGO: "True" #this is docker environmental variable we will maintain here to save time.
+  MONGO: "true" #this is docker environmental variable we will maintain here to save time.
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -49,10 +49,10 @@ metadata:
 
 spec:
   selector:
-    labels:
-      app: catalogue
-      project: roboshop
-      tier: app
+    app: catalogue
+    project: roboshop
+    tier: app
+         
   ports:
   - protocol: TCP
     port: 8080
