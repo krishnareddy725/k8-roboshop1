@@ -3,10 +3,8 @@ kind: ConfigMap
 metadata:
   name: web
   namespace: roboshop
-
 data:
   nginx.conf: |
-    nginx.conf: |
     user www-data;
     worker_processes 4;
     pid /var/run/nginx.pid;
@@ -117,26 +115,23 @@ kind: Deployment
 metadata:
   name: web
   namespace: roboshop
-  labels:
+  labels: # these labels are deployment labels
     app: web
     project: roboshop
     tier: web
-
 spec:
   replicas: 1
   selector:
-    matchLabels:
+    matchLabels: # these labels are used to find the pods
       app: web
       project: roboshop
       tier: web
-  
   template:
     metadata:
-      labels:
+      labels: # these labels are pod labels
         app: web
         project: roboshop
         tier: web
-    
     spec:
       containers:
       - name: web
@@ -160,14 +155,13 @@ kind: Service
 metadata:
   name: web
   namespace: roboshop
-
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: web
     project: roboshop
     tier: web
   ports:
   - protocol: TCP
-    port: 80 #serviceport
-    targetPort: 80 #containerPort
+    port: 80 #service-port
+    targetPort: 80 #container-port
