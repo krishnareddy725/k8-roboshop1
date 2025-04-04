@@ -6,5 +6,6 @@ RUN chown roboshop:roboshop /opt/server
 USER roboshop
 COPY package.json /opt/server/
 COPY server.js /opt/server/
+RUN chmod -R 777 /opt/server/
 RUN npm install
 CMD ["node", "server.js"]
