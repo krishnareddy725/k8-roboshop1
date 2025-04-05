@@ -92,8 +92,7 @@ data:
           proxy_pass http://user:8080/;
         }
 
-
-
+       
     }
 
     } 
