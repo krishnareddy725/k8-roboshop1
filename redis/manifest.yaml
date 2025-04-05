@@ -23,11 +23,11 @@ spec:
         project: roboshop
         tier: db
 
-  spec:
-    containers:
-    - name: redis
-      image: redis
-      imagePullPolicy: Always
+    spec:
+      containers:
+      - name: redis
+        image: redis
+        imagePullPolicy: Always
 ---
 apiVersion: v1
 kind: Service
