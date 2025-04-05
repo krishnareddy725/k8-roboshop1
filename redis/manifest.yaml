@@ -4,7 +4,7 @@ metadata:
   name: redis
   namespace: roboshop
   labels:
-    app: redis
+    apps: redis
     project: roboshop
     tier: db
 
@@ -18,7 +18,7 @@ spec:
   
   template:
     metadata:
-      app: redis
+      apps: redis
       project: roboshop
       tier: t1
     spec:
@@ -35,7 +35,7 @@ metadata:
 
 spec:
   selector:
-    app: redis
+    apps: redis
     project: roboshop
     tier: t1
   ports:
