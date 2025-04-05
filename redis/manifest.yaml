@@ -21,7 +21,7 @@ spec:
     labels:
       app: redis
       project: roboshop
-      tier: t1
+      tier: db
 
   spec:
     containers:
