@@ -18,9 +18,11 @@ spec:
   
   template:
   metadata:
-    app: redis
-    project: roboshop
-    tier: t1
+    labels:
+      app: redis
+      project: roboshop
+      tier: t1
+
   spec:
     containers:
     - name: redis
