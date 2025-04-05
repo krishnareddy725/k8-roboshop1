@@ -10,7 +10,7 @@ metadata:
 
 spec:
   replicas: 1
-  slector:
+  selector:
     matchLabels:
       app: redis
       project: roboshop
