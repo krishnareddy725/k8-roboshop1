@@ -39,7 +39,7 @@ spec:
   selector:
     app: redis
     project: roboshop
-    tier: t1
+    tier: db
   ports:
   - protocol: TCP
     port: 6379 #service-port
